@@ -5,13 +5,13 @@ Just parses a folder of markdown documents, applies a template to them, and spit
 
 ## TODO:
 
-- [] Everything
+- [ ] Everything
 
-- [] Add internal linking
+- [ ] Add internal linking
 
-- [] Add external linking
+- [ ] Add external linking
 
-- [] Add back linking
+- [ ] Add back linking
 
-- [] Add transclusion
+- [ ] Add transclusion
 
