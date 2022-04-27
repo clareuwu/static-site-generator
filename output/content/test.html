@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>claresies.com</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	<script src="index.js"></script>
+  
+  
+  <p>Clare Reinhart - pr1532</p>
+
+<h1>TLB, page faults</h1>
+
+<p>1 TLB miss for 0x200000<br />
+1 page fault for 0x200000<br />
+1 TLB miss for 0x300000<br />
+1 page fault for 0x300000<br />
+See [[Test other page]]</p>
+
+<p>In order</p>
+
+<h1>Virtual memory</h1>
+
+<h2>1.1</h2>
+
+<p>True sometimes. This can happen when a process tries to write to a non-write enable page, but the page is still in the TLB.</p>
+
+<h2>1.2</h2>
+
+<p>True sometimes. If the page isn&#8217;t in the TLB, the CPU walks the page tables to check for a valid PTE. If one is found, and the PTE_U bit is set (allows user mode processes to access a page), there won&#8217;t be a page fault raised. </p>
+
+<h2>1.3</h2>
+
+<p>True sometimes for the same reason as 1.2, but PTE_U bit not required to be set.</p>
+
+<h2>1.4</h2>
+
+<p>True always. If the PTE is valid and read enabled by user processes, then it should always be loadable.</p>
+
+<h2>1.5</h2>
+
+<p>True sometimes, the PTE_W bit controls whether processes are allowed to store into that page. Must be set to be true.</p>
+
+  <footer>
+  <hr>
+  <p>Contact me @ "email" | discord? linkedin? twitter?</p>
+</footer>
+  </body>
+</html>

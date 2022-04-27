@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>claresies.com</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	<script src="index.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script>
+    MathJax = {
+      tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  
+  
+  <h1>q1</h1>
+
+<p>  $\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$ When \(a = 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+  \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]A relation R on a set A is antisymmetric if for any a, b in A, and (a,b) valid relation, that (b,a) not a valid relation. By definition, R^-1 takes all valid (a,b) in R and has all (b,a) valid instead. For an element to be in R cap R^-1, while R is symmetric, (a,b) must be in R and (b,a) must be in R^-1, which implies a=b, thus all lists in R cap R inv must be in the form (a,a) for some elem a, making it equal to the identity relation. </p>
+
+<p>A relation \A on a set $A$ is antisymmetric if for any distinct ($a,b$) in $A$ and ($a,b$) is a valid relation on $R$, then ($b,a$) is not a valid relation. </p>
+
+<h1>q2</h1>
+
+<p>To be equivalence relation, must be reflexive, symmetric, and transitive.<br />
+Reflexive: for all x in A, we have x R x. For any a in Z9, a^2 - a^2 = 0, 9 divides into 0, so relation is reflexive</p>
+
+<p>Symmetric: Let x,y in Z9 and x R y, then x^2 teq y^2 (mod 9), which means y^2 teq x^2 (mod 9), and that y R x, so R is symmetric</p>
+
+<p>Transitive: Let x,y,z in Z9 and x R y and y R z. Then x^2 = y^2 (mod 9) and y^2 = z^2 (mod 9), so x^2 = y^2 = z^2 (mod 9), thus x R z and R is transitive. </p>
+
+<p>Equivalence classes:<br />
+[0] = {0, 3, 6}<br />
+[1] = {1, 8}<br />
+[2] = {2, 7}<br />
+[4] = {4, 5}</p>
+
+<p>(b)<br />
+Reflexive: For any a in Z9, a^3 - a^3 = 9, 9 divides into 0, so reflexive.</p>
+
+<p>Symmetric: let x,y in Z9 and x R y, then x^3 = y^3 (mod 3) which means y^3 = x^3 mod 9 so that y R x, so R is symmetric</p>
+
+<p>Transitive: Let x,y,z in Z9 and x R y and y R z. then x^3=y^3 mod 9 and y^3 = z^3 mod 9 so x^3 = y^3 = z^3 mod 9, thus x R z and R is transitive.</p>
+
+<p>[0] = {0, 3, 6}<br />
+[1] = {1, 4, 7}<br />
+[2] = {2, 5, 8}</p>
+
+<h1>q3</h1>
+
+<p>(a) 11! / 1! 4! 4! 2!</p>
+
+<p>(b) 10! / 2! 3! 3! 1! 1!</p>
+
+<p>(c) 12! / 4! 1! 3! 1! 1! 1! 1!</p>
+
+<h1>q4</h1>
+
+<p>40! / 5! ^ 8 x 8!</p>
+
+<h1>q5</h1>
+
+<p>{1,2,3,4}<br />
+{1}{2,3,4}<br />
+{2}{1,3,4}<br />
+{3}{1,2,4}<br />
+{4}{1,2,3}<br />
+{1,2}{3,4}<br />
+{1,3}{2,4}<br />
+{1,4}{2,3}</p>
+
+<p>For either set, choosing a pair of subsets whose union is a set, with 2^n possible subsets, we can choose 2^n - 2 (nonempty and not the entire set) sets for the first set, and 1 way to choose the second set (all the elements that weren&#8217;t in the first set). Divide this by 2, because we don&#8217;t care if some distinct set is the first set or the second set, giving 2^n-1 - 1</p>
+
+<p>so (a) is 2^3 - 1 = 7<br />
+(b) 2^99 - 1</p>
+
+<h1>q6</h1>
+
+<p>{1,2,3,4,5}<br />
+Want a set with 3 elements, each of which are either 1 element from the original set or 2 of those elements. repeats are okay.<br />
+each element can be any 5 of the original set, or binom 5 2 = 10 choices for 2 element sets, so 15 total possible choices for any of the 3 elements. don&#8217;t care about the order so 15^3 choices</p>
+
+<p>If no repeat digits, there are 15 choices for the first element, then either</p>
+
+<h1>q7</h1>
+
+<p>There are a number of equivalence relations equal to the number of partitions. </p>
+
+<pre><code>R1 = 1,1 2,2 3,3
+R2 = 1,1 2,2 3,3 1,2 2,1
+R3 = 1,1 2,2 3,3 1,3 3,1
+R4 = 1,1 2,2 3,3 2,3 3,2
+R5 = 1,1 2,2 3,3 1,2 2,1 1,3 3,1 2,3 3,2
+</code></pre>
+
+<p>(b)</p>
+
+<pre><code>1,1 2,2 3,3 4,4
+1,1 2,2 3,3 4,4 1,2 2,1
+1,1 2,2 3,3 4,4 1,3 3,1
+1,1 2,2 3,3 4,4 1,4 4,1
+1,1 2,2 3,3 4,4 2,3 3,2
+1,1 2,2 3,3 4,4 2,4 4,2
+1,1 2,2 3,3 4,4 3,4 4,3
+</code></pre>
+
+<h1>q8</h1>
+
+<p>Assume there is integers $a$ and $b$ such that $21a+30b=1$. Then there exists some integer $k=7a+10b$, and $3k=1$. This implies that $k=1/3$. But because $a, b$ are integers, there is no way to multiply or add them with other integers to produce a ratio, contradicting the statement and proving it wrong.</p>
+
+<h1>q9</h1>
+
+<p>Assume $a^2+b^2=1, a+b\leq1$. Square to get $a^2+2ab+b^2\leq 1$ Because $a^2+b^2=1$, can rewrite as $1+2ab\leq 1$. This implies $2ab\leq 0$. However, this isn&#8217;t possible because $a,b>0$, so we disprove $a+b\leq 1$, meaning it must be $&gt;1$. </p>
+
+<h1>q10</h1>
+
+<p>If for all positive integers $n$ the statement is true, for $n=1$, $1\cdot 1! = 2!-1$, which is true.<br />
+Suppose FSOC the statement is false<br />
+Let $X\subseteq N$ be the set of counterexamples for the statement. $X$ contains a smallest element. We&#8217;ve shown the statement is true for $n=1$, so smallest element must be $&gt;1$.<br />
+Call the smallest element in $X, z$. since $z>1, z-1 \notin X$.<br />
+$$\sum_{k=1}^{z-1}k\cdot k!= z!-1  $$<br />
+Add $z\cdot z!$ to both sides:<br />
+$$\sum_{k=1}^{z}k\cdot k!= (z+1)!-1  $$<br />
+Therefore, the original statement is true. </p>
+
+  <footer>
+  <hr>
+  <p>Contact me @ "email" | discord? linkedin? twitter?</p>
+</footer>
+  </body>
+</html>
